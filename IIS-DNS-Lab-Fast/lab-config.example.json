@@ -1,0 +1,6 @@
+{
+  "iisManagementIP": "10.10.10.2",
+  "managementPrefix": 24,
+  "dnsServerIP": "10.10.10.3",
+  "portalPort": 8787
+}

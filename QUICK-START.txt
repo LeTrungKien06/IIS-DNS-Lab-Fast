@@ -1,0 +1,43 @@
+IIS-DNS-Lab-Fast - QUICK START
+==============================
+
+KHONG CO IP IIS/DNS CO DINH.
+Moi nguoi nhap IP cua lab minh 1 lan.
+
+1) DNS SERVER
+- Dat IP tinh bat ky phu hop voi lab.
+- Cai DNS Role va bat WinRM.
+
+2) IIS SERVER
+Copy IIS-DNS-Lab-Fast -> C:\IIS-DNS-Lab-Fast
+Run PowerShell Administrator:
+
+cd C:\IIS-DNS-Lab-Fast
+.\Setup-Server.ps1
+
+Nhap:
+- IIS management IP cua may IIS
+- Prefix management
+- DNS Server IP
+- Portal port (Enter = 8787)
+
+Sau do:
+.\Save-DNSCredential.ps1
+.\Test-DNS.ps1
+
+3) MAY THAT / CLIENT
+Copy IIS-DNS-Lab-Client -> C:\IIS-DNS-Lab-Client
+Run PowerShell Administrator:
+
+cd C:\IIS-DNS-Lab-Client
+.\Install-ClientAgent.ps1
+
+Nhap cung IP IIS, DNS, prefix, portal port da dung tren server.
+
+4) MOI LAN LAM BAI
+Tren IIS double-click:
+C:\IIS-DNS-Lab-Fast\Start-IIS.bat
+
+Nhap Site/IP/Prefix/Hostname/HTTP/HTTPS/Port/Title/Content
+Ctrl+Enter
+DONE.
