@@ -1,0 +1,26 @@
+# Credentials
+**/dns-credential.xml
+
+# Per-machine configuration
+**/lab-config.json
+**/client-config.json
+
+# Runtime state
+**/deploy-state.json
+
+# Backups
+*.bak
+*.bad.bak
+*.corrupt.bak
+
+# Generated IIS websites
+IIS-DNS-Sites/
+
+# Logs
+*.log
+Logs/
+History/
+
+# Windows
+Thumbs.db
+Desktop.ini
